@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "253e1fe9-cf7e-417a-9525-d60b0b4f47ed",
+		"name": "language",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27651782"
+	},
+	"item": [
+		{
+			"name": "lang_detection",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sentence\": \"تعرف على ما إذا كان شخص ما يقول نكتة رائعة يمكنك أن تقول إنها جيدة.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/lang_detection",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"lang_detection"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "translation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sentence\": \"It was discontinued in February 2018.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/translation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"translation"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
